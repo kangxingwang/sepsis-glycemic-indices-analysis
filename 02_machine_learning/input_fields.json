@@ -1,0 +1,235 @@
+{
+  "required_identity_outcome_derivation_fields": [
+    {
+      "field": "stay_id",
+      "type": "unique nonmissing character identifier",
+      "role": "ICU stay identity; excluded from predictors"
+    },
+    {
+      "field": "subject_id",
+      "type": "unique nonmissing character identifier",
+      "role": "one record per patient; excluded from predictors"
+    },
+    {
+      "field": "hadm_id",
+      "type": "unique nonmissing character identifier",
+      "role": "hospital admission identity; excluded from predictors"
+    },
+    {
+      "field": "day28_outcome",
+      "type": "complete 0/1",
+      "role": "original 28-day mortality outcome"
+    },
+    {
+      "field": "hba1c",
+      "type": "complete numeric percent",
+      "role": "HGI equation input; excluded as a direct predictor"
+    },
+    {
+      "field": "glucose_first24h_chem",
+      "type": "complete numeric mg/dL",
+      "role": "HGI equation input; excluded as a direct predictor"
+    }
+  ],
+  "candidate_predictor_fields": [
+    {
+      "source_field": "age",
+      "analysis_name": "Age"
+    },
+    {
+      "source_field": "gender",
+      "analysis_name": "Gender"
+    },
+    {
+      "source_field": "race",
+      "analysis_name": "Race"
+    },
+    {
+      "source_field": "sofa",
+      "analysis_name": "SOFA"
+    },
+    {
+      "source_field": "oasis",
+      "analysis_name": "OASIS"
+    },
+    {
+      "source_field": "charlson",
+      "analysis_name": "CCI"
+    },
+    {
+      "source_field": "icd2_hypertension",
+      "analysis_name": "Hypertension"
+    },
+    {
+      "source_field": "icd2_diabetes",
+      "analysis_name": "Diabetes"
+    },
+    {
+      "source_field": "icd2_copd",
+      "analysis_name": "COPD"
+    },
+    {
+      "source_field": "icd2_stroke",
+      "analysis_name": "Stroke"
+    },
+    {
+      "source_field": "icd2_hf",
+      "analysis_name": "HF"
+    },
+    {
+      "source_field": "icd_liver",
+      "analysis_name": "Liver_disease"
+    },
+    {
+      "source_field": "icd2_ckd",
+      "analysis_name": "CKD"
+    },
+    {
+      "source_field": "icd_malignancy",
+      "analysis_name": "Malignancy"
+    },
+    {
+      "source_field": "icu_type",
+      "analysis_name": "ICU_Type"
+    },
+    {
+      "source_field": "lung_infection",
+      "analysis_name": "Lung_infection"
+    },
+    {
+      "source_field": "gi_infection",
+      "analysis_name": "GI_infection"
+    },
+    {
+      "source_field": "genito_urinary_infection",
+      "analysis_name": "GU_infection"
+    },
+    {
+      "source_field": "other_infection",
+      "analysis_name": "Other_infection"
+    },
+    {
+      "source_field": "vs_24h_map_min",
+      "analysis_name": "MAP"
+    },
+    {
+      "source_field": "vs_24h_heart_rate_max",
+      "analysis_name": "Heart_Rate"
+    },
+    {
+      "source_field": "vs_24h_resp_rate_max",
+      "analysis_name": "Resp_Rate"
+    },
+    {
+      "source_field": "vs_24h_temp_max",
+      "analysis_name": "Temperature"
+    },
+    {
+      "source_field": "lab_fst_24h_hemoglobin_first",
+      "analysis_name": "Hb"
+    },
+    {
+      "source_field": "lab_fst_24h_wbc_first",
+      "analysis_name": "WBC"
+    },
+    {
+      "source_field": "lab_fst_24h_platelet_first",
+      "analysis_name": "Plt"
+    },
+    {
+      "source_field": "lab_fst_24h_alt_first",
+      "analysis_name": "ALT"
+    },
+    {
+      "source_field": "lab_fst_24h_ast_first",
+      "analysis_name": "AST"
+    },
+    {
+      "source_field": "lab_fst_24h_tbil_first",
+      "analysis_name": "Bilirubin"
+    },
+    {
+      "source_field": "lab_fst_24h_alb_first",
+      "analysis_name": "Albumin"
+    },
+    {
+      "source_field": "lab_fst_24h_creatinine_first",
+      "analysis_name": "Creatinine"
+    },
+    {
+      "source_field": "lab_fst_24h_bun_first",
+      "analysis_name": "BUN"
+    },
+    {
+      "source_field": "lab_fst_24h_aptt_first",
+      "analysis_name": "APTT"
+    },
+    {
+      "source_field": "lab_fst_24h_lactate_first",
+      "analysis_name": "Lactate"
+    },
+    {
+      "source_field": "lab_fst_24h_na_first",
+      "analysis_name": "Sodium"
+    },
+    {
+      "source_field": "lab_fst_24h_k_first",
+      "analysis_name": "Potassium"
+    },
+    {
+      "source_field": "lab_fst_24h_ca_first",
+      "analysis_name": "Calcium"
+    },
+    {
+      "source_field": "lab_fst_24h_cl_first",
+      "analysis_name": "Chloride"
+    },
+    {
+      "source_field": "lab_fst_24h_rbc_first",
+      "analysis_name": "RBC"
+    },
+    {
+      "source_field": "lab_fst_24h_hct_first",
+      "analysis_name": "Hct"
+    },
+    {
+      "source_field": "lab_fst_24h_mcv_first",
+      "analysis_name": "MCV"
+    },
+    {
+      "source_field": "lab_fst_24h_rdw_first",
+      "analysis_name": "RDW"
+    },
+    {
+      "source_field": "itvtn_24h_vent_tag",
+      "analysis_name": "MV"
+    },
+    {
+      "source_field": "itvtn_24h_rrt_tag",
+      "analysis_name": "RRT"
+    },
+    {
+      "source_field": "drug_24h_vaso_tag",
+      "analysis_name": "Vaso"
+    },
+    {
+      "source_field": "drug_24h_insulin_tag",
+      "analysis_name": "Insulin"
+    },
+    {
+      "source_field": "gv_cv_icu_mixed",
+      "analysis_name": "GV"
+    },
+    {
+      "source_field": "shr_first24h_chem",
+      "analysis_name": "SHR"
+    },
+    {
+      "source_field": "hgi_first24h_chem",
+      "analysis_name": "HGI"
+    }
+  ],
+  "selection": "Of 49 named candidates, 43 meet the study availability rules. The final trained intersection contains 25 variables; these are recomputed from the training data, not forced.",
+  "outcome_warning": "hos_outcome, ICU outcome, length of stay and follow-up time are never predictors or replacement ML outcomes.",
+  "four_vital_fields": "The final NWICU CSV must contain the raw-record re-extracted first-day vital signs, not the earlier incomplete NWICU export."
+}
